@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{Mapping Unstable Invariant Manifolds in the Earth-Moon System\\
+\large Zero-Fuel Return Trajectories in the CR3BP}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report presents a high-precision numerical pipeline for the Circular Restricted Three-Body Problem (CR3BP) in the Earth-Moon system. We derive the equations of motion in a rotating frame, implement a custom adaptive RK45 integrator, validate against invariant checks, and compute 3D halo orbits using differential correction with variational equations. The resulting monodromy matrix is used to generate unstable invariant manifolds that naturally transport trajectories toward Earth. A Poincar\'e section at the atmospheric interface produces re-entry maps filtered by flight path angle. Error sources and numerical stability are quantified in detail.
+\end{abstract}
+
+\section{Introduction}
+Motivate low-energy transfers, CR3BP modeling, and the role of invariant manifolds.
+
+\section{CR3BP Formulation}
+Define the nondimensionalized equations of motion, rotating frame, and Jacobi constant.
+
+\section{Numerical Methods}
+Describe the adaptive RK45 integrator and error control strategy.
+
+\section{Validation Suite}
+Summarize the zero-mass and Lagrange-point checks.
+
+\section{Halo Orbit Computation}
+Present the shooting method and variational equations for STM propagation.
+
+\section{Invariant Manifolds}
+Describe eigen-analysis, unstable directions, and manifold propagation.
+
+\section{Poincar\'e Re-entry Mapping}
+Define the spherical interface, flight path angle filtering, and re-entry map.
+
+\section{Error Budget and Numerical Stability}
+\subsection{Local Truncation Error}
+Discuss RK45 embedded error estimates and step-size adaptation.
+
+\subsection{Energy Drift}
+Quantify Jacobi conservation and inertial energy error in the zero-mass limit.
+
+\subsection{Sensitivity to Initial Conditions}
+Relate STM conditioning and eigenvalue spread to numerical instability.
+
+\subsection{Floating-Point Limitations}
+Discuss machine epsilon, accumulation of roundoff, and mitigation strategies.
+
+\section{Results}
+Include key figures for the halo orbit, manifold tubes, and re-entry map.
+
+\section{Conclusion}
+Summarize contributions and future work.
+
+\end{document}
